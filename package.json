@@ -23,7 +23,7 @@
     "prestart:server:prod": "rimraf dist && npm run build",
     "prod:server": "node dist/main.js",
     "lint": "npm-run-all -p lint:*",
-    "lint:server": "tslint -p src/server/tsconfig.json -c tslint.json",
+    "lint:server": "tslint -p src/server/tsconfig.json",
     "lint:client": "ng lint"
   },
   "private": true,
@@ -51,6 +51,8 @@
     "@angular/cli": "~7.3.3",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
     "@nestjs/testing": "^5.1.0",
     "@types/express": "^4.16.0",
     "@types/jasmine": "~2.8.8",
@@ -95,8 +97,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test && yarn test",
-      "pre-push": "yarn test && yarn test"
+      "pre-commit": "yarn lint && yarn test",
+      "pre-push": "yarn lint && yarn test",
+      "commit-msg": "commitlint -e"
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
