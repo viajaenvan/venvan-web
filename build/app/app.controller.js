@@ -20,7 +20,7 @@ let AppController = class AppController {
     }
 };
 __decorate([
-    common_1.Get('/h'),
+    common_1.Get('/v'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", String)
