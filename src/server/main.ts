@@ -4,9 +4,10 @@ import * as path from 'path'
 import * as express from 'express'
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule)
-  app.use('/smartcom', express.static(path.join(__dirname, '../../dist')))
+  const app = await NestFactory.create(AppModule, { bodyParser: true })
+  const PORT = process.env.PORT || 3000
+  app.use('/', express.static(path.join(__dirname, '../../dist')))
   app.enableCors()
-  await app.listen(3000)
+  await app.listen(PORT)
 }
 bootstrap()

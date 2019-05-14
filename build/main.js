@@ -14,8 +14,8 @@ const path = require("path");
 const express = require("express");
 function bootstrap() {
     return __awaiter(this, void 0, void 0, function* () {
-        const app = yield core_1.NestFactory.create(app_module_1.AppModule);
-        app.use('/smartcom', express.static(path.join(__dirname, '../../dist')));
+        const app = yield core_1.NestFactory.create(app_module_1.AppModule, { bodyParser: true });
+        app.use('/', express.static(path.join(__dirname, '../../dist')));
         app.enableCors();
         yield app.listen(3000);
     });
