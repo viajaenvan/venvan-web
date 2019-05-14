@@ -1,9 +1,13 @@
 {
   "name": "venvan-web",
   "version": "0.0.0",
+  "engines": {
+    "node": ">=10.15.1"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run build && node ./build/main.js",
+    "start:prod": "node ./build/main.js",
     "e2e": "ng e2e",
     "dev:server": "nodemon",
     "dev:client": "ng serve --disable-host-check --open --proxy-config proxy.conf.json --aot",
@@ -20,7 +24,8 @@
     "format:client": "prettier --write \"src/client/*.ts\"",
     "format:server": "prettier --write \"src/server/*.ts\"",
     "debug:server:debug": "nodemon --config nodemon-debug.json",
-    "prestart:server:prod": "rimraf dist && npm run build",
+    "prestart:prod": "rimraf dist && npm run build",
+    "postinstall": "npm run prestart:prod",
     "prod:server": "node dist/main.js",
     "lint": "npm-run-all -p lint:*",
     "lint:server": "tslint -p src/server/tsconfig.json",
@@ -40,6 +45,7 @@
     "@nestjs/common": "^5.4.0",
     "@nestjs/core": "^5.4.0",
     "core-js": "^2.5.4",
+    "express": "^4.16.4",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
     "rxjs": "~6.3.3",
