@@ -4,6 +4,6 @@
     <testCase name="AppController root should return &quot;Hello World!&quot;" duration="14"/>
   </file>
   <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/server/test/app.e2e-spec.ts">
-    <testCase name="AppController (e2e) / (GET)" duration="81"/>
+    <testCase name="AppController (e2e) / (GET)" duration="74"/>
   </file>
 </testExecutions>

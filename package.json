@@ -37,6 +37,8 @@
   "dependencies": {
     "@angular/cli": "~8.0.1",
     "@angular/compiler-cli": "~8.0.0",
+    "@angular-devkit/build-angular": "~0.800.1",
+    "@angular/language-service": "~8.0.0",
     "@angular/animations": "^8.0.0",
     "@angular/cdk": "^8.0.0",
     "@angular/common": "~8.0.0",
@@ -60,8 +62,6 @@
     "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.800.1",
-    "@angular/language-service": "~8.0.0",
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
     "@nestjs/testing": "^5.1.0",
