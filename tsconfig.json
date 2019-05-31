@@ -9,7 +9,8 @@
     "target": "es5",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "types": ["node", "jest", "cypress"]
   },
   "exclude": ["node_modules"]
 }
