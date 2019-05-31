@@ -16,7 +16,7 @@ function bootstrap() {
     return __awaiter(this, void 0, void 0, function* () {
         const app = yield core_1.NestFactory.create(app_module_1.AppModule, { bodyParser: true });
         const PORT = process.env.PORT || 3000;
-        const URL_STATIC = '../../dist/venvan-web';
+        const URL_STATIC = '../../dist';
         app.use('/', express.static(path.join(__dirname, URL_STATIC)));
         app.enableCors();
         yield app.listen(PORT);

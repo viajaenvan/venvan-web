@@ -30,8 +30,7 @@
     "prod:server": "node dist/main.js",
     "lint": "npm-run-all -p lint:*",
     "lint:server": "tslint -p src/server/tsconfig.json",
-    "lint:client": "ng lint",
-    "preinstall": "yarn global add angular-cli"
+    "lint:client": "ng lint"
   },
   "private": true,
   "dependencies": {
@@ -59,7 +58,8 @@
     "rxjs": "~6.5.2",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "@types/jest": "^23.3.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
