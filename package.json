@@ -12,6 +12,7 @@
     "dev:server": "nodemon",
     "dev:client": "ng serve --disable-host-check --open --proxy-config proxy.conf.json --aot",
     "build": "npm-run-all -p build:*",
+    "heroku-postbuild": "npm-run-all -p build:*",
     "build:server": "tsc -p src/server/tsconfig.build.json",
     "build:client": "ng build --prod --aot",
     "test": "npm-run-all -p test:*",
