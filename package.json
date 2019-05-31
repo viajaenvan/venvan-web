@@ -52,7 +52,8 @@
     "rimraf": "^2.6.2",
     "rxjs": "~6.5.2",
     "tslib": "^1.9.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.800.1",
@@ -78,7 +79,6 @@
     "jest-sonar-reporter": "^2.0.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.18.3",
-    "npm-run-all": "^4.1.5",
     "prettier": "^1.16.4",
     "protractor": "~5.4.0",
     "supertest": "^3.1.0",
