@@ -25,7 +25,7 @@
     "format:server": "prettier --write \"src/server/*.ts\"",
     "debug:server:debug": "nodemon --config nodemon-debug.json",
     "prestart:prod": "rimraf dist && npm run build",
-    "postinstall": "npm run prestart:prod",
+    "postinstall": "npm run prestart:prod && ivy-ngcc",
     "prod:server": "node dist/main.js",
     "lint": "npm-run-all -p lint:*",
     "lint:server": "tslint -p src/server/tsconfig.json",
