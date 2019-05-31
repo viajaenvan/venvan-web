@@ -3,14 +3,14 @@
     "lib": ["es2015", "es2015.iterable", "dom"],
     "module": "commonjs",
     "declaration": true,
-    "removeComments": true,
+    "removeComments": true,g
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "types": ["node", "jest", "cypress"]
+    "types": ["node", "jest"]
   },
   "exclude": ["node_modules"]
 }
