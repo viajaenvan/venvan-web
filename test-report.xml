@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/server/app/app.controller.spec.ts">
-    <testCase name="AppController root should return &quot;Hello World!&quot;" duration="18"/>
+    <testCase name="AppController root should return &quot;Hello World!&quot;" duration="15"/>
   </file>
   <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/server/test/app.e2e-spec.ts">
-    <testCase name="AppController (e2e) / (GET)" duration="61"/>
+    <testCase name="AppController (e2e) / (GET)" duration="64"/>
   </file>
 </testExecutions>
