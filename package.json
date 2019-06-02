@@ -1,9 +1,6 @@
 {
   "name": "venvan-web",
   "version": "0.0.0",
-  "engines": {
-    "node": ">=10.15.1"
-  },
   "scripts": {
     "ng": "ng",
     "start": "npm run build && node ./build/main.js",
