@@ -6,7 +6,7 @@
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "es2015",
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
