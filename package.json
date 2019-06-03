@@ -1,15 +1,15 @@
 {
   "name": "venvan-web",
   "version": "0.0.0",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
-    "ng": "ng",
     "start": "npm run build && node ./build/main.js",
     "start:prod": "node ./build/main.js",
-    "e2e": "ng e2e",
     "dev:server": "nodemon",
     "dev:client": "ng serve --disable-host-check --open --proxy-config proxy.conf.json --aot",
     "build": "npm-run-all -p build:*",
-    "heroku-postbuild": "yarn run start:prod",
     "build:server": "tsc -p src/server/tsconfig.build.json",
     "build:client": "ng build --prod --aot",
     "test": "npm-run-all -p test:*",
@@ -23,7 +23,7 @@
     "format:server": "prettier --write \"src/server/*.ts\"",
     "debug:server:debug": "nodemon --config nodemon-debug.json",
     "prestart:prod": "rimraf dist && npm run build",
-    "postinstall": "npm run prestart:prod && ivy-ngcc",
+    "heroku-postbuild": "npm run prestart:prod",
     "prod:server": "node dist/main.js",
     "lint": "npm-run-all -p lint:*",
     "lint:server": "tslint -p src/server/tsconfig.json",
