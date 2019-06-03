@@ -10,13 +10,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@nestjs/core");
 const app_module_1 = require("./app/app.module");
-const path = require("path");
 const express = require("express");
+const path_1 = require("path");
 function bootstrap() {
     return __awaiter(this, void 0, void 0, function* () {
         const app = yield core_1.NestFactory.create(app_module_1.AppModule, { bodyParser: true });
-        const PORT = process.env.PORT || 3000;
-        app.use('/', express.static(path.join(__dirname, '../../dist')));
+        const PORT = process.env.PORT || 4201;
+        if (process.env.NODE_ENV === 'production') {
+            app.use('/', express.static(path_1.join(process.cwd(), 'dist/venvan-web')));
+        }
         app.enableCors();
         yield app.listen(PORT);
     });
