@@ -6,7 +6,11 @@ import { join } from 'path'
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { bodyParser: true })
   const PORT = process.env.PORT || 4201
-  app.use('/', express.static(join(__dirname, '../../dist/venvan-web')))
+
+  if (process.env.NODE_ENV === 'production') {
+    app.use('/', express.static(join(process.cwd(), 'dist/venvan-web')))
+  }
+
   app.enableCors()
   await app.listen(PORT)
 }
