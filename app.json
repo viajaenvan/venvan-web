@@ -1,10 +1,6 @@
 {
-  "addons": [
-
-  ],
-  "buildpacks": [
-
-  ],
+  "addons": [],
+  "buildpacks": [],
   "env": {
     "NODE_ENV": {
       "required": true
@@ -13,10 +9,8 @@
       "required": true
     }
   },
-  "formation": {
-  },
+  "formation": {},
   "name": "venvan-web",
-  "scripts": {
-  },
+  "scripts": {},
   "stack": "heroku-18"
 }
