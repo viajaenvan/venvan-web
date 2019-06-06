@@ -24,7 +24,12 @@
             "polyfills": "src/client/polyfills.ts",
             "tsConfig": "src/client/tsconfig.app.json",
             "assets": ["src/client/favicon.ico", "src/client/assets"],
-            "styles": ["src/client/styles.scss"],
+            "styles": [
+              "src/client/styles.scss",
+              {
+                "input": "src/client/venvan-theme.scss"
+              }
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },

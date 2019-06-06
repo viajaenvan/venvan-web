@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/server/app/app.controller.spec.ts">
-    <testCase name="AppController root should return &quot;Hello World!&quot;" duration="12"/>
-  </file>
-  <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/server/test/app.e2e-spec.ts">
-    <testCase name="AppController (e2e) / (GET)" duration="75"/>
+  <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/client/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="534"/>
+    <testCase name="AppComponent should have as title &apos;venvan-web&apos;" duration="447"/>
+    <testCase name="AppComponent should render title in a h1 tag" duration="329"/>
   </file>
 </testExecutions>
