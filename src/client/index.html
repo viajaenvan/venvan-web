@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -13,6 +13,45 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <app-root></app-root>
+        <style type="text/css">
+          .venvan-page-loading {
+            height: 100vh;
+            display: flex;
+            width: auto;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .container-loading-page {
+            height: 300px;
+            width: 340px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            text-align: center;
+            flex-direction: column;
+          }
+
+          .icon-loading {
+            width: 80px;
+            margin-bottom: 41px;
+            height: 44px;
+            object-fit: contain;
+            background-image: url('./assets/logos/dark_logo_transparent_background');
+          }
+      </style>
+        <venvan-root>
+            <div class="load-bar-page"></div>
+            <div class="venvan-page-loading">
+                <div class="container-loading-page">
+                    <img
+                        class="icon-loading"
+                        src="./assets/logos/dark_logo_transparent_background.png"
+                        alt="logo-venvan"
+                    >
+                </div>
+            </div>
+        </venvan-root>
     </body>
 </html>

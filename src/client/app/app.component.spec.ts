@@ -1,12 +1,18 @@
 import { TestBed, async } from '@angular/core/testing'
 import { AppComponent } from './app.component'
 import { MaterialModule } from './shared/material.module'
+import { SharedModule } from './shared/shared.module'
+import { HeaderComponent } from './shared/components/header/header.component'
+import { NO_ERRORS_SCHEMA } from '@angular/core'
+import { MenuComponent } from './shared/components/menu/menu.component'
+import { MatToolbar } from '@angular/material'
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [MaterialModule],
-      declarations: [AppComponent]
+      imports: [MaterialModule, SharedModule],
+      declarations: [AppComponent],
+      schemas: [NO_ERRORS_SCHEMA]
     }).compileComponents()
   }))
 
@@ -14,18 +20,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent)
     const app = fixture.debugElement.componentInstance
     expect(app).toBeTruthy()
-  })
-
-  it(`should have as title 'venvan-web'`, () => {
-    const fixture = TestBed.createComponent(AppComponent)
-    const app = fixture.debugElement.componentInstance
-    expect(app.title).toEqual('VIAJA EN VAN')
-  })
-
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent)
-    fixture.detectChanges()
-    const compiled = fixture.debugElement.nativeElement
-    expect(compiled.querySelector('h1').textContent).toContain('VIAJA EN VAN')
   })
 })

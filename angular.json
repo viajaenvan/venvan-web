@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src/client",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "venvan",
       "schematics": {
         "@schematics/angular:component": {
           "style": "sass"

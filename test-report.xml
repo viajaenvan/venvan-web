@@ -1,8 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/client/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="534"/>
-    <testCase name="AppComponent should have as title &apos;venvan-web&apos;" duration="447"/>
-    <testCase name="AppComponent should render title in a h1 tag" duration="329"/>
-  </file>
 </testExecutions>
