@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/client/app/shared/components/footer/footer.component.spec.ts">
-    <testCase name="FooterComponent should create" duration="150"/>
+    <testCase name="FooterComponent should create" duration="168"/>
   </file>
   <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/client/app/shared/components/header/header.component.spec.ts">
-    <testCase name="HeaderComponent should create" duration="277"/>
+    <testCase name="HeaderComponent should create" duration="240"/>
   </file>
   <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/client/app/shared/components/menu/menu.component.spec.ts">
-    <testCase name="MenuComponent should create" duration="32"/>
+    <testCase name="MenuComponent should create" duration="51"/>
   </file>
   <file path="/Users/william.ariza/apps/viajaenvan/venvan-web/src/client/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="702"/>
+    <testCase name="AppComponent should create the app" duration="910"/>
   </file>
 </testExecutions>

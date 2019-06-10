@@ -32,7 +32,7 @@
   a:link { -webkit-tap-highlight-color: #FF5E99; }
 
   #main {
-  	width: 800px;
+    width: auto;
   	height: 300px;
   	margin: auto; }
 
@@ -42,7 +42,7 @@
   	box-shadow: 0 0 50px 10px rgb(40, 57, 68);
   	border: 10px solid #ECEBFA;
   	border-top-color:rgb(40, 57, 68);
-  	margin: 20% auto;
+  	margin: 10% auto;
   	text-align:center;
   	background: -webkit-linear-gradient(top, #ffffff 48%, #ecebfa 49%, #ecebfa 51%, #fff 52%);
   	background: -moz-linear-gradient(top, #ffffff 48%, #ecebfa 49%, #ecebfa 51%, #fff 52%);
@@ -219,6 +219,16 @@
             align-items: center;
           }
 
+          @media (max-width: 600px) {
+            .venvan-page-loading {
+              height: 25vh;
+              display: flex;
+              width: auto;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+
           .container-loading-page {
             height: 300px;
             width: 340px;
@@ -263,5 +273,6 @@
                 </div>
             </div>
         </venvan-root>
+        <script>debugger</script>
     </body>
 </html>
